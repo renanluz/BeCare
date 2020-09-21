@@ -104,6 +104,7 @@
                     </view>
                     <connections>
                         <outlet property="searchButton" destination="E97-sg-WGY" id="9PK-kD-yMt"/>
+                        <segue destination="Ca2-td-W5d" kind="presentation" identifier="goToSearch" id="Fwe-uj-9LQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -115,7 +116,7 @@
             <objects>
                 <viewController id="Ca2-td-W5d" customClass="SearchViewController" customModule="becare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IIN-4W-G8l">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="QiY-dg-UNa"/>
