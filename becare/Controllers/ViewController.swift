@@ -16,7 +16,6 @@ class ViewController: UIViewController {
     @IBAction func searchButtonPressed(_ sender: CustomButton) {
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
