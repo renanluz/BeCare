@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Hospital: Codable {
+struct HospitalModel: Codable {
     let id: Int
     let nome: String
     let telefone: String
