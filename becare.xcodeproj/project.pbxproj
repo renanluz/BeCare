@@ -15,6 +15,9 @@
 		AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA0780C2518CCD7001C28EF /* Assets.xcassets */; };
 		AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */; };
 		AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078192518CE48001C28EF /* Hospital.swift */; };
+		AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */; };
+		AEA078212518D020001C28EF /* AirbnbCerealLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */; };
+		AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,9 @@
 		AEA0780F2518CCD7001C28EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA078112518CCD7001C28EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AEA078192518CE48001C28EF /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealBold.ttf; sourceTree = "<group>"; };
+		AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealLight.ttf; sourceTree = "<group>"; };
+		AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealMedium.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				AEA0780C2518CCD7001C28EF /* Assets.xcassets */,
 				AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */,
 				AEA078112518CCD7001C28EF /* Info.plist */,
+				AEA0781C2518CFCB001C28EF /* Fonts */,
 				AEA078092518CCD2001C28EF /* becare.xcdatamodeld */,
 			);
 			path = becare;
@@ -95,6 +102,16 @@
 				AEA078192518CE48001C28EF /* Hospital.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		AEA0781C2518CFCB001C28EF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */,
+				AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */,
+				AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +172,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA078212518D020001C28EF /* AirbnbCerealLight.ttf in Resources */,
 				AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */,
 				AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */,
 				AEA078082518CCD2001C28EF /* Main.storyboard in Resources */,
+				AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */,
+				AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
