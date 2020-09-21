@@ -26,8 +26,7 @@ class SearchViewController: UIViewController {
         tableView.dataSource = self
         //tableView.delegate = self
       
-        tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
-        
+        tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")   
         
     }
     

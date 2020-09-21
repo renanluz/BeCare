@@ -13,6 +13,7 @@ class CustomButton: UIButton {
     override init(frame: CGRect) {
         super.init(frame: frame)
         setupButton()
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -21,6 +22,7 @@ class CustomButton: UIButton {
     }
     
     func setupButton() {
+        setInsets(forContentPadding: UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10), imageTitlePadding: 20)
         setShadow()
         titleLabel?.font    = UIFont(name: "Airbnb Ceral App-Medium", size: 16)
         setTitleColor(.black, for: .normal)
@@ -35,6 +37,24 @@ class CustomButton: UIButton {
         layer.shadowOpacity = 0.3
         clipsToBounds       = true
         layer.masksToBounds = false
+    }
+    
+    func setInsets(
+        forContentPadding contentPadding: UIEdgeInsets,
+        imageTitlePadding: CGFloat
+    ) {
+        self.contentEdgeInsets = UIEdgeInsets(
+            top: contentPadding.top,
+            left: contentPadding.left,
+            bottom: contentPadding.bottom,
+            right: contentPadding.right + imageTitlePadding
+        )
+        self.titleEdgeInsets = UIEdgeInsets(
+            top: 0,
+            left: imageTitlePadding,
+            bottom: 0,
+            right: -imageTitlePadding
+        )
     }
     
 }
