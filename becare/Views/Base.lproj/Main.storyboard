@@ -134,6 +134,9 @@
                                 </constraints>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="location.circle" catalog="system"/>
+                                <connections>
+                                    <action selector="locationPressed:" destination="Ca2-td-W5d" eventType="touchUpInside" id="OOW-44-ypx"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BUSCAS RECENTES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lKs-pc-row">
                                 <rect key="frame" x="26.999999999999993" y="145.66666666666666" width="110.33333333333331" height="15.666666666666657"/>
@@ -185,6 +188,7 @@
                         <viewLayoutGuide key="safeArea" id="QiY-dg-UNa"/>
                     </view>
                     <connections>
+                        <outlet property="searchTextField" destination="iZw-cb-juf" id="d1P-0C-Vau"/>
                         <outlet property="tableView" destination="jgT-V2-wra" id="2y8-1p-cmd"/>
                     </connections>
                 </viewController>

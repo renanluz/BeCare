@@ -17,6 +17,7 @@ class SearchViewController: UIViewController {
     ]
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var searchTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,13 +26,17 @@ class SearchViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         //tableView.delegate = self
-      
-        tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")   
+        tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
+        
+        searchTextField.delegate = self
         
     }
     
+    @IBAction func locationPressed(_ sender: UIButton) {
+    }
 }
 
+//MARK: - UITableViewDataSource
 
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -47,10 +52,39 @@ extension SearchViewController: UITableViewDataSource {
     }
 }
 
+//MARK: - UITableViewDelegate
+
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(searchs[(indexPath.row)].text)
+       
+        searchTextField.text = searchs[(indexPath.row)].text
     }
 }
 
+//MARK: - UITextFieldDelegate
 
+extension SearchViewController: UITextFieldDelegate {
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        searchTextField.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if textField.text != "" {
+            return true
+        } else {
+            textField.placeholder = "Digite algo"
+            return false
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        if let search = searchTextField.text {
+            //weatherManager.fetchWeather(cityName: city)
+        }
+        searchTextField.text = ""
+    }
+    
+    
+}
