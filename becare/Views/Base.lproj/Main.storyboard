@@ -46,7 +46,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ex5-92-GGL" customClass="CustomCard" customModule="becare" customModuleProvider="target">
                                 <rect key="frame" x="23" y="253" width="329" height="409"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4RO-c3-bjc">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campaign.png" translatesAutoresizingMaskIntoConstraints="NO" id="4RO-c3-bjc">
                                         <rect key="frame" x="62.666666666666686" y="109.33333333333331" width="204" height="204"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="204" id="Is9-Jh-kJ3"/>
@@ -113,5 +113,6 @@
     </scenes>
     <resources>
         <image name="bg.png" width="375" height="812"/>
+        <image name="campaign.png" width="180" height="180"/>
     </resources>
 </document>
