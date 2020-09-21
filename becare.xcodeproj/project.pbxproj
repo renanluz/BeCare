@@ -14,6 +14,7 @@
 		AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA078092518CCD2001C28EF /* becare.xcdatamodeld */; };
 		AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA0780C2518CCD7001C28EF /* Assets.xcassets */; };
 		AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */; };
+		AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078192518CE48001C28EF /* Hospital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		AEA0780C2518CCD7001C28EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA0780F2518CCD7001C28EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA078112518CCD7001C28EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AEA078192518CE48001C28EF /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,15 +61,40 @@
 			isa = PBXGroup;
 			children = (
 				AEA078002518CCD2001C28EF /* AppDelegate.swift */,
+				AEA0781B2518CE4D001C28EF /* Model */,
 				AEA078022518CCD2001C28EF /* SceneDelegate.swift */,
-				AEA078042518CCD2001C28EF /* ViewController.swift */,
-				AEA078062518CCD2001C28EF /* Main.storyboard */,
+				AEA078182518CDD5001C28EF /* Controllers */,
+				AEA078172518CDC3001C28EF /* Views */,
 				AEA0780C2518CCD7001C28EF /* Assets.xcassets */,
 				AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */,
 				AEA078112518CCD7001C28EF /* Info.plist */,
 				AEA078092518CCD2001C28EF /* becare.xcdatamodeld */,
 			);
 			path = becare;
+			sourceTree = "<group>";
+		};
+		AEA078172518CDC3001C28EF /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AEA078062518CCD2001C28EF /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AEA078182518CDD5001C28EF /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				AEA078042518CCD2001C28EF /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		AEA0781B2518CE4D001C28EF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				AEA078192518CE48001C28EF /* Hospital.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -144,6 +171,7 @@
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
 				AEA078012518CCD2001C28EF /* AppDelegate.swift in Sources */,
+				AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */,
 				AEA078032518CCD2001C28EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -291,6 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BQQFX8G4T;
 				INFOPLIST_FILE = becare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.renanluz.becare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -309,6 +338,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7BQQFX8G4T;
 				INFOPLIST_FILE = becare/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -316,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.renanluz.becare;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
