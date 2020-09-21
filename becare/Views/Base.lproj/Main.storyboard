@@ -26,9 +26,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="LhP-m4-kwL">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.png" translatesAutoresizingMaskIntoConstraints="NO" id="LhP-m4-kwL">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E97-sg-WGY" customClass="CustomButton" customModule="becare" customModuleProvider="target">
                                 <rect key="frame" x="23" y="113" width="329" height="45"/>
@@ -47,7 +46,7 @@
                                 <rect key="frame" x="23" y="253" width="329" height="409"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="campaign.png" translatesAutoresizingMaskIntoConstraints="NO" id="4RO-c3-bjc">
-                                        <rect key="frame" x="62.666666666666686" y="109.33333333333331" width="204" height="204"/>
+                                        <rect key="frame" x="62.666666666666686" y="122.66666666666669" width="204" height="204"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="204" id="Is9-Jh-kJ3"/>
                                             <constraint firstAttribute="width" constant="204" id="YkQ-fx-lzl"/>
@@ -79,14 +78,13 @@
                                     <constraint firstItem="IxA-Ck-FxZ" firstAttribute="top" secondItem="Ex5-92-GGL" secondAttribute="top" constant="14" id="67g-Og-m0S"/>
                                     <constraint firstAttribute="trailing" secondItem="S2E-VF-abj" secondAttribute="trailing" constant="17" id="8UH-iK-Lb1"/>
                                     <constraint firstItem="bYe-oY-o4W" firstAttribute="leading" secondItem="Ex5-92-GGL" secondAttribute="leading" constant="17" id="934-M0-TDv"/>
+                                    <constraint firstItem="4RO-c3-bjc" firstAttribute="centerY" secondItem="Ex5-92-GGL" secondAttribute="centerY" constant="20" id="IwV-aN-opa"/>
                                     <constraint firstItem="IxA-Ck-FxZ" firstAttribute="leading" secondItem="Ex5-92-GGL" secondAttribute="leading" constant="17" id="TkD-Yn-GOR"/>
                                     <constraint firstItem="bYe-oY-o4W" firstAttribute="top" secondItem="IxA-Ck-FxZ" secondAttribute="bottom" constant="5" id="Ywx-4U-7Vb"/>
                                     <constraint firstItem="S2E-VF-abj" firstAttribute="leading" secondItem="Ex5-92-GGL" secondAttribute="leading" constant="17" id="ajs-PD-0TJ"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IxA-Ck-FxZ" secondAttribute="trailing" constant="17" id="ehg-W1-0Cm"/>
-                                    <constraint firstItem="4RO-c3-bjc" firstAttribute="top" secondItem="bYe-oY-o4W" secondAttribute="bottom" constant="5" id="fXd-hW-UWa"/>
                                     <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bYe-oY-o4W" secondAttribute="trailing" constant="17" id="jth-UW-9sk"/>
                                     <constraint firstAttribute="bottom" secondItem="S2E-VF-abj" secondAttribute="bottom" constant="15" id="v6p-Ln-C4t"/>
-                                    <constraint firstItem="S2E-VF-abj" firstAttribute="top" relation="greaterThanOrEqual" secondItem="4RO-c3-bjc" secondAttribute="bottom" constant="34" id="vZ9-Vc-SPs"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -94,8 +92,12 @@
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Ex5-92-GGL" secondAttribute="bottom" constant="120" id="30v-mX-lJk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E97-sg-WGY" secondAttribute="trailing" constant="23" id="ETK-rZ-duf"/>
+                            <constraint firstItem="LhP-m4-kwL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bhg-zg-46v"/>
+                            <constraint firstAttribute="bottom" secondItem="LhP-m4-kwL" secondAttribute="bottom" id="fF1-AM-2Ut"/>
                             <constraint firstItem="E97-sg-WGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="fYd-cw-QNo"/>
                             <constraint firstItem="Ex5-92-GGL" firstAttribute="top" secondItem="E97-sg-WGY" secondAttribute="bottom" constant="95" id="fjq-go-zkD"/>
+                            <constraint firstItem="LhP-m4-kwL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="h3J-Jx-Kzd"/>
+                            <constraint firstItem="LhP-m4-kwL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hfb-IS-iEt"/>
                             <constraint firstItem="E97-sg-WGY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="69" id="iG3-cC-rgh"/>
                             <constraint firstItem="Ex5-92-GGL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="lHy-Xg-Iij"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ex5-92-GGL" secondAttribute="trailing" constant="23" id="tqa-LB-ivL"/>
@@ -141,7 +143,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-V2-wra">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jgT-V2-wra">
                                 <rect key="frame" x="0.0" y="172.66666666666666" width="375" height="347.33333333333337"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
@@ -166,6 +168,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="QiY-dg-UNa"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="jgT-V2-wra" id="2y8-1p-cmd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDG-fp-WMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

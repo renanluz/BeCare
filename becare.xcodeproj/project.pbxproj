@@ -23,6 +23,9 @@
 		AEA078282518E73D001C28EF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078272518E73D001C28EF /* bg.png */; };
 		AEA0782A2518E941001C28EF /* campaign.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078292518E941001C28EF /* campaign.png */; };
 		AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0782B2518EAF9001C28EF /* SearchViewController.swift */; };
+		AEA078302518F2F8001C28EF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0782F2518F2F8001C28EF /* Search.swift */; };
+		AEA078392519197E001C28EF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078372519197D001C28EF /* SearchCell.swift */; };
+		AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA078382519197D001C28EF /* SearchCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +47,9 @@
 		AEA078272518E73D001C28EF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		AEA078292518E941001C28EF /* campaign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campaign.png; sourceTree = "<group>"; };
 		AEA0782B2518EAF9001C28EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AEA0782F2518F2F8001C28EF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		AEA078372519197D001C28EF /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		AEA078382519197D001C28EF /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +85,8 @@
 				AEA078002518CCD2001C28EF /* AppDelegate.swift */,
 				AEA0781B2518CE4D001C28EF /* Model */,
 				AEA078022518CCD2001C28EF /* SceneDelegate.swift */,
-				AEA078182518CDD5001C28EF /* Controllers */,
 				AEA078172518CDC3001C28EF /* Views */,
+				AEA078182518CDD5001C28EF /* Controllers */,
 				AEA0780C2518CCD7001C28EF /* Assets.xcassets */,
 				AEA078292518E941001C28EF /* campaign.png */,
 				AEA078272518E73D001C28EF /* bg.png */,
@@ -98,6 +104,8 @@
 				AEA078062518CCD2001C28EF /* Main.storyboard */,
 				AEA078232518DE44001C28EF /* CustomButton.swift */,
 				AEA078252518DF78001C28EF /* CustomCard.swift */,
+				AEA078372519197D001C28EF /* SearchCell.swift */,
+				AEA078382519197D001C28EF /* SearchCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -115,6 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				AEA078192518CE48001C28EF /* Hospital.swift */,
+				AEA0782F2518F2F8001C28EF /* Search.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -193,6 +202,7 @@
 				AEA078082518CCD2001C28EF /* Main.storyboard in Resources */,
 				AEA078282518E73D001C28EF /* bg.png in Resources */,
 				AEA0782A2518E941001C28EF /* campaign.png in Resources */,
+				AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */,
 				AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */,
 				AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */,
 			);
@@ -205,6 +215,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA078302518F2F8001C28EF /* Search.swift in Sources */,
+				AEA078392519197E001C28EF /* SearchCell.swift in Sources */,
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
 				AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */,
