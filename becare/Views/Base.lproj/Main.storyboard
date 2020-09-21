@@ -37,7 +37,7 @@
                                 </state>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ex5-92-GGL">
-                                <rect key="frame" x="23" y="253" width="329" height="409"/>
+                                <rect key="frame" x="23" y="253" width="329" height="405"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4RO-c3-bjc">
                                         <rect key="frame" x="62.666666666666686" y="109.33333333333331" width="204" height="204"/>
@@ -53,7 +53,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ajude a conter a COVID-19" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bYe-oY-o4W">
-                                        <rect key="frame" x="17" y="33.999999999999993" width="295" height="70.333333333333314"/>
+                                        <rect key="frame" x="17" y="33.999999999999993" width="215.33333333333334" height="70.333333333333314"/>
                                         <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="27"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -72,19 +72,18 @@
                                     <constraint firstAttribute="trailing" secondItem="S2E-VF-abj" secondAttribute="trailing" constant="17" id="8UH-iK-Lb1"/>
                                     <constraint firstItem="bYe-oY-o4W" firstAttribute="leading" secondItem="Ex5-92-GGL" secondAttribute="leading" constant="17" id="934-M0-TDv"/>
                                     <constraint firstItem="IxA-Ck-FxZ" firstAttribute="leading" secondItem="Ex5-92-GGL" secondAttribute="leading" constant="17" id="TkD-Yn-GOR"/>
-                                    <constraint firstAttribute="height" constant="409" id="Ycx-rW-Mx0"/>
                                     <constraint firstItem="bYe-oY-o4W" firstAttribute="top" secondItem="IxA-Ck-FxZ" secondAttribute="bottom" constant="5" id="Ywx-4U-7Vb"/>
                                     <constraint firstItem="S2E-VF-abj" firstAttribute="leading" secondItem="Ex5-92-GGL" secondAttribute="leading" constant="17" id="ajs-PD-0TJ"/>
-                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IxA-Ck-FxZ" secondAttribute="trailing" constant="20" symbolic="YES" id="ehg-W1-0Cm"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="IxA-Ck-FxZ" secondAttribute="trailing" constant="17" id="ehg-W1-0Cm"/>
                                     <constraint firstItem="4RO-c3-bjc" firstAttribute="top" secondItem="bYe-oY-o4W" secondAttribute="bottom" constant="5" id="fXd-hW-UWa"/>
-                                    <constraint firstAttribute="trailing" secondItem="bYe-oY-o4W" secondAttribute="trailing" constant="17" id="jth-UW-9sk"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="bYe-oY-o4W" secondAttribute="trailing" constant="17" id="jth-UW-9sk"/>
                                     <constraint firstItem="S2E-VF-abj" firstAttribute="top" secondItem="4RO-c3-bjc" secondAttribute="bottom" constant="34" id="vZ9-Vc-SPs"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="lessThanOrEqual" secondItem="Ex5-92-GGL" secondAttribute="bottom" constant="120" id="30v-mX-lJk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ex5-92-GGL" secondAttribute="bottom" constant="120" id="30v-mX-lJk"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="E97-sg-WGY" secondAttribute="trailing" constant="23" id="ETK-rZ-duf"/>
                             <constraint firstItem="E97-sg-WGY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="fYd-cw-QNo"/>
                             <constraint firstItem="Ex5-92-GGL" firstAttribute="top" secondItem="E97-sg-WGY" secondAttribute="bottom" constant="95" id="fjq-go-zkD"/>
