@@ -22,6 +22,7 @@
 		AEA078262518DF78001C28EF /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078252518DF78001C28EF /* CustomCard.swift */; };
 		AEA078282518E73D001C28EF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078272518E73D001C28EF /* bg.png */; };
 		AEA0782A2518E941001C28EF /* campaign.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078292518E941001C28EF /* campaign.png */; };
+		AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0782B2518EAF9001C28EF /* SearchViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		AEA078252518DF78001C28EF /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
 		AEA078272518E73D001C28EF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 		AEA078292518E941001C28EF /* campaign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campaign.png; sourceTree = "<group>"; };
+		AEA0782B2518EAF9001C28EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				AEA078042518CCD2001C28EF /* ViewController.swift */,
+				AEA0782B2518EAF9001C28EF /* SearchViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			files = (
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
+				AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */,
 				AEA078242518DE44001C28EF /* CustomButton.swift in Sources */,
 				AEA078012518CCD2001C28EF /* AppDelegate.swift in Sources */,
 				AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */,
