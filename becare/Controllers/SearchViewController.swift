@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreLocation
 
 class SearchViewController: UIViewController {
     
@@ -19,10 +20,18 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
     
+    let locationManager = CLLocationManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print(searchs[0].text)
+        locationManager.delegate = self
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.requestLocation()
+        
+        
+        
+        
         tableView.delegate = self
         tableView.dataSource = self
         //tableView.delegate = self
@@ -56,7 +65,7 @@ extension SearchViewController: UITableViewDataSource {
 
 extension SearchViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+        
         searchTextField.text = searchs[(indexPath.row)].text
     }
 }
@@ -79,12 +88,28 @@ extension SearchViewController: UITextFieldDelegate {
         }
     }
     
-    func textFieldDidEndEditing(_ textField: UITextField) {
-        if let search = searchTextField.text {
-            //weatherManager.fetchWeather(cityName: city)
+    /*func textFieldDidEndEditing(_ textField: UITextField) {
+     if let search = searchTextField.text {
+     //weatherManager.fetchWeather(cityName: city)
+     }
+     searchTextField.text = ""
+     }*/
+}
+
+//MARK: - CLLocationManagerDelegate
+
+extension SearchViewController: CLLocationManagerDelegate {
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.last {
+           let lat = location.coordinate.latitude
+            let lon = location.coordinate.longitude
+            
+            print(lat)
+            print(lon)
         }
-        searchTextField.text = ""
     }
     
-    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        print(error)
+    }
 }

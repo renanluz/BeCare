@@ -26,6 +26,7 @@
 		AEA078302518F2F8001C28EF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0782F2518F2F8001C28EF /* Search.swift */; };
 		AEA078392519197E001C28EF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078372519197D001C28EF /* SearchCell.swift */; };
 		AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA078382519197D001C28EF /* SearchCell.xib */; };
+		AEA0783C251933DC001C28EF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA0783B251933DC001C28EF /* data.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +51,7 @@
 		AEA0782F2518F2F8001C28EF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		AEA078372519197D001C28EF /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		AEA078382519197D001C28EF /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		AEA0783B251933DC001C28EF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +90,7 @@
 				AEA078172518CDC3001C28EF /* Views */,
 				AEA078182518CDD5001C28EF /* Controllers */,
 				AEA0780C2518CCD7001C28EF /* Assets.xcassets */,
+				AEA0783B251933DC001C28EF /* data.json */,
 				AEA078292518E941001C28EF /* campaign.png */,
 				AEA078272518E73D001C28EF /* bg.png */,
 				AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */,
@@ -199,6 +202,7 @@
 				AEA078212518D020001C28EF /* AirbnbCerealLight.ttf in Resources */,
 				AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */,
 				AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */,
+				AEA0783C251933DC001C28EF /* data.json in Resources */,
 				AEA078082518CCD2001C28EF /* Main.storyboard in Resources */,
 				AEA078282518E73D001C28EF /* bg.png in Resources */,
 				AEA0782A2518E941001C28EF /* campaign.png in Resources */,
