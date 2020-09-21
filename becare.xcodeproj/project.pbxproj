@@ -18,6 +18,8 @@
 		AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */; };
 		AEA078212518D020001C28EF /* AirbnbCerealLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */; };
 		AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */; };
+		AEA078242518DE44001C28EF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078232518DE44001C28EF /* CustomButton.swift */; };
+		AEA078262518DF78001C28EF /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078252518DF78001C28EF /* CustomCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealBold.ttf; sourceTree = "<group>"; };
 		AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealLight.ttf; sourceTree = "<group>"; };
 		AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealMedium.ttf; sourceTree = "<group>"; };
+		AEA078232518DE44001C28EF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		AEA078252518DF78001C28EF /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 			isa = PBXGroup;
 			children = (
 				AEA078062518CCD2001C28EF /* Main.storyboard */,
+				AEA078232518DE44001C28EF /* CustomButton.swift */,
+				AEA078252518DF78001C28EF /* CustomCard.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -190,9 +196,11 @@
 			files = (
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
+				AEA078242518DE44001C28EF /* CustomButton.swift in Sources */,
 				AEA078012518CCD2001C28EF /* AppDelegate.swift in Sources */,
 				AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */,
 				AEA078032518CCD2001C28EF /* SceneDelegate.swift in Sources */,
+				AEA078262518DF78001C28EF /* CustomCard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
