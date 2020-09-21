@@ -196,6 +196,21 @@
             </objects>
             <point key="canvasLocation" x="983.20000000000005" y="140.39408866995075"/>
         </scene>
+        <!--Result View Controller-->
+        <scene sceneID="65d-IM-ieY">
+            <objects>
+                <viewController id="TX1-Cq-tvs" customClass="ResultViewController" customModule="becare" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="k6F-1b-T8d">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="dTI-uL-v1l"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zjK-uf-hq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="138"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bg.png" width="375" height="812"/>
