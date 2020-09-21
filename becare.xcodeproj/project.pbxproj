@@ -20,6 +20,7 @@
 		AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */; };
 		AEA078242518DE44001C28EF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078232518DE44001C28EF /* CustomButton.swift */; };
 		AEA078262518DF78001C28EF /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078252518DF78001C28EF /* CustomCard.swift */; };
+		AEA078282518E73D001C28EF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078272518E73D001C28EF /* bg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealMedium.ttf; sourceTree = "<group>"; };
 		AEA078232518DE44001C28EF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AEA078252518DF78001C28EF /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
+		AEA078272518E73D001C28EF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +78,7 @@
 				AEA078182518CDD5001C28EF /* Controllers */,
 				AEA078172518CDC3001C28EF /* Views */,
 				AEA0780C2518CCD7001C28EF /* Assets.xcassets */,
+				AEA078272518E73D001C28EF /* bg.png */,
 				AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */,
 				AEA078112518CCD7001C28EF /* Info.plist */,
 				AEA0781C2518CFCB001C28EF /* Fonts */,
@@ -182,6 +185,7 @@
 				AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */,
 				AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */,
 				AEA078082518CCD2001C28EF /* Main.storyboard in Resources */,
+				AEA078282518E73D001C28EF /* bg.png in Resources */,
 				AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */,
 				AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */,
 			);
