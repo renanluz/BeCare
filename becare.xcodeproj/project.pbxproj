@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE73AF77251A113000FB327F /* HospitalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73AF76251A113000FB327F /* HospitalData.swift */; };
 		AEA078012518CCD2001C28EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078002518CCD2001C28EF /* AppDelegate.swift */; };
 		AEA078032518CCD2001C28EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078022518CCD2001C28EF /* SceneDelegate.swift */; };
 		AEA078052518CCD2001C28EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078042518CCD2001C28EF /* ViewController.swift */; };
@@ -30,10 +31,11 @@
 		AEA0783E2519438E001C28EF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783D2519438E001C28EF /* ResultViewController.swift */; };
 		AEA07841251957E2001C28EF /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783F251957E2001C28EF /* ResultCell.swift */; };
 		AEA07842251957E2001C28EF /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA07840251957E2001C28EF /* ResultCell.xib */; };
-		AEA0784425195B27001C28EF /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0784325195B27001C28EF /* Hospital.swift */; };
+		AEA0784425195B27001C28EF /* HospitalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0784325195B27001C28EF /* HospitalManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE73AF76251A113000FB327F /* HospitalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalData.swift; sourceTree = "<group>"; };
 		AEA077FD2518CCD2001C28EF /* becare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = becare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA078002518CCD2001C28EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA078022518CCD2001C28EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,7 +61,7 @@
 		AEA0783D2519438E001C28EF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		AEA0783F251957E2001C28EF /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		AEA07840251957E2001C28EF /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
-		AEA0784325195B27001C28EF /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		AEA0784325195B27001C28EF /* HospitalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,8 +139,9 @@
 			isa = PBXGroup;
 			children = (
 				AEA078192518CE48001C28EF /* HospitalModel.swift */,
+				AEA0784325195B27001C28EF /* HospitalManager.swift */,
+				AE73AF76251A113000FB327F /* HospitalData.swift */,
 				AEA0782F2518F2F8001C28EF /* Search.swift */,
-				AEA0784325195B27001C28EF /* Hospital.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -233,10 +236,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA078302518F2F8001C28EF /* Search.swift in Sources */,
-				AEA0784425195B27001C28EF /* Hospital.swift in Sources */,
+				AEA0784425195B27001C28EF /* HospitalManager.swift in Sources */,
 				AEA078392519197E001C28EF /* SearchCell.swift in Sources */,
 				AEA07841251957E2001C28EF /* ResultCell.swift in Sources */,
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
+				AE73AF77251A113000FB327F /* HospitalData.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
 				AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */,
 				AEA078242518DE44001C28EF /* CustomButton.swift in Sources */,

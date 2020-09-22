@@ -9,23 +9,36 @@
 import UIKit
 
 class ResultViewController: UIViewController {
-
+    @IBAction func searchButtonPressed(_ sender: UIButton) {
+ 
+    }
+    
     @IBOutlet weak var tableView: UITableView!
     
-    var hospitals: [Hospital] = [
-        Hospital(name: "Cruz Azul", address: "Rua 10"),
-        Hospital(name: "Santa Casa", address: "Rua 55"),
-        Hospital(name: "HB", address: "Rua 11")
-    ]
+    var hospitals: [HospitalModel] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadHospital()
         
         tableView.dataSource = self
         tableView.delegate = self
         
         tableView.register(UINib(nibName: "ResultCell", bundle: nil), forCellReuseIdentifier: "Cell")
+    }
+    
+    func loadHospital() {
+        guard let fileURL = Bundle.main.url(forResource: "data", withExtension: "json") else { return }
+        do {
         
-        // Do any additional setup after loading the view.
+            let data = try Data(contentsOf: fileURL)
+            hospitals = try JSONDecoder().decode([HospitalModel].self, from: data)
+            
+        } catch  {
+            print(error.localizedDescription)
+        }
+        
     }
 }
 
@@ -38,8 +51,8 @@ extension ResultViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! ResultCell
         
-        cell.nameLabel.text = hospitals[indexPath.row].name
-        cell.addressLabel.text = hospitals[indexPath.row].address
+        cell.nameLabel.text = hospitals[indexPath.row].nome
+        cell.addressLabel.text = hospitals[indexPath.row].logradouro
         
         return cell
     }
@@ -47,6 +60,6 @@ extension ResultViewController: UITableViewDataSource {
 
 extension ResultViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(hospitals[indexPath.row].address)
+       // print(hospitals[indexPath.row].address)
     }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX1-Cq-tvs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -190,6 +190,7 @@
                     <connections>
                         <outlet property="searchTextField" destination="iZw-cb-juf" id="d1P-0C-Vau"/>
                         <outlet property="tableView" destination="jgT-V2-wra" id="2y8-1p-cmd"/>
+                        <segue destination="TX1-Cq-tvs" kind="show" identifier="goToResult" id="khZ-o9-CPd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NDG-fp-WMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -201,11 +202,11 @@
             <objects>
                 <viewController id="TX1-Cq-tvs" customClass="ResultViewController" customModule="becare" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k6F-1b-T8d">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="758"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mt4-mh-fth">
-                                <rect key="frame" x="20" y="44" width="335" height="734"/>
+                                <rect key="frame" x="20" y="0.0" width="335" height="724"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="19F-JQ-gvc">
                                         <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
@@ -226,6 +227,9 @@
                                                     <constraint firstAttribute="height" constant="40" id="qvl-qd-ZK4"/>
                                                 </constraints>
                                                 <state key="normal" image="magnifyingglass" catalog="system"/>
+                                                <connections>
+                                                    <action selector="searchButtonPressed:" destination="TX1-Cq-tvs" eventType="touchUpInside" id="Xcn-h6-SYe"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -233,7 +237,7 @@
                                         </constraints>
                                     </stackView>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-Ns-2AW">
-                                        <rect key="frame" x="0.0" y="50" width="335" height="684"/>
+                                        <rect key="frame" x="0.0" y="50" width="335" height="674"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                     </tableView>
                                 </subviews>
@@ -255,6 +259,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="dTI-uL-v1l"/>
                     </view>
+                    <navigationItem key="navigationItem" id="ye3-XT-Hrs"/>
                     <connections>
                         <outlet property="tableView" destination="8dR-Ns-2AW" id="MhW-v8-lSj"/>
                     </connections>

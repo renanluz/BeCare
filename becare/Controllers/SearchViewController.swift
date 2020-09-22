@@ -20,6 +20,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
     
+    let hosptialManager = HospitalManager()
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
@@ -29,12 +30,8 @@ class SearchViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.requestLocation()
         
-        
-        
-        
         tableView.delegate = self
         tableView.dataSource = self
-        //tableView.delegate = self
         tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         
         searchTextField.delegate = self
@@ -44,6 +41,8 @@ class SearchViewController: UIViewController {
     }
     
     @IBAction func locationPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
     }
 }
 
@@ -78,6 +77,7 @@ extension SearchViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true)
+        self.performSegue(withIdentifier: "goToResult", sender: self)
         return true
     }
     
@@ -90,12 +90,12 @@ extension SearchViewController: UITextFieldDelegate {
         }
     }
     
-    /*func textFieldDidEndEditing(_ textField: UITextField) {
+    func textFieldDidEndEditing(_ textField: UITextField) {
      if let search = searchTextField.text {
-     //weatherManager.fetchWeather(cityName: city)
+        hosptialManager.fetchHospital(text: search)
      }
      searchTextField.text = ""
-     }*/
+     }
 }
 
 //MARK: - CLLocationManagerDelegate
