@@ -138,9 +138,9 @@
 		AEA0781B2518CE4D001C28EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AEA078192518CE48001C28EF /* HospitalModel.swift */,
 				AEA0784325195B27001C28EF /* HospitalManager.swift */,
 				AE73AF76251A113000FB327F /* HospitalData.swift */,
+				AEA078192518CE48001C28EF /* HospitalModel.swift */,
 				AEA0782F2518F2F8001C28EF /* Search.swift */,
 			);
 			path = Model;

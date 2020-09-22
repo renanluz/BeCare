@@ -9,6 +9,10 @@
 import Foundation
 
 struct HospitalData: Codable {
+    let hospitais: [Hospital]
+}
+
+struct Hospital: Codable {
     let id: Int
     let nome: String
     let telefone: String
@@ -18,9 +22,5 @@ struct HospitalData: Codable {
     let publico: Bool
     let longitude: Double
     let latitude: Double
-}
-
-struct Hospital: Codable {
-    //
 }
 

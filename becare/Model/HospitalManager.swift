@@ -9,7 +9,7 @@
 import Foundation
 
 struct HospitalManager {
-    let hospitalURL = "https://becare-api.azurewebsites.net/api/Hospitais/listar/"
+    let hospitalURL = "https://becare-api.azurewebsites.net/api/hospitais/listar-ios/"
     
     func fetchHospital(text: String) {
         let urlString = "\(hospitalURL)\(text)"
@@ -37,7 +37,7 @@ struct HospitalManager {
         let decoder = JSONDecoder()
         do {
        let decodedData = try decoder.decode(HospitalData.self, from: hospitalData)
-        
+            print(decodedData.hospitais[0].nome)
         } catch {
             print(error)
             print("deu ruim")
