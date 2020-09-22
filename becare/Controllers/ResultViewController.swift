@@ -9,6 +9,13 @@
 import UIKit
 
 class ResultViewController: UIViewController {
+    
+    var nome: String?
+    var telefone: String?
+    var logradouro: String?
+    var longitude: Double?
+    var latitude: Double?
+    
     @IBAction func searchButtonPressed(_ sender: UIButton) {
  
     }

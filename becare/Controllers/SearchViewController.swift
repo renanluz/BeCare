@@ -9,7 +9,7 @@
 import UIKit
 import CoreLocation
 
-class SearchViewController: UIViewController {
+class SearchViewController: UIViewController, HospitalManagerDelegate {
     
     var searchs: [Search] = [
         Search(text: "Hospital 1"),
@@ -17,14 +17,23 @@ class SearchViewController: UIViewController {
         Search(text: "Hospital 3")
     ]
     
+    
+    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchTextField: UITextField!
+    @IBAction func locationPressed(_ sender: UIButton) {
+        
+        self.performSegue(withIdentifier: "goToResult", sender: self)
+    }
     
-    let hosptialManager = HospitalManager()
+    var hospitalManager = HospitalManager()
     let locationManager = CLLocationManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        hospitalManager.delegate = self
         
         locationManager.delegate = self
         locationManager.requestWhenInUseAuthorization()
@@ -35,15 +44,18 @@ class SearchViewController: UIViewController {
         tableView.register(UINib(nibName: "SearchCell", bundle: nil), forCellReuseIdentifier: "ReusableCell")
         
         searchTextField.delegate = self
-        
-        
-        
     }
     
-    @IBAction func locationPressed(_ sender: UIButton) {
-        
-        self.performSegue(withIdentifier: "goToResult", sender: self)
+    
+    func didUpdateHospital(_ hospitalManager: HospitalManager, hospital: HospitalModel) {
+       print(hospital)
     }
+    
+    func didFailWithErro(error: Error) {
+        print(error)
+    }
+    
+    
 }
 
 //MARK: - UITableViewDataSource
@@ -55,9 +67,8 @@ extension SearchViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! SearchCell
-        
         cell.label.text = searchs[(indexPath.row)].text
-        
+       
         return cell
     }
 }
@@ -77,7 +88,7 @@ extension SearchViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true)
-        self.performSegue(withIdentifier: "goToResult", sender: self)
+        //self.performSegue(withIdentifier: "goToResult", sender: self)
         return true
     }
     
@@ -91,11 +102,11 @@ extension SearchViewController: UITextFieldDelegate {
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
-     if let search = searchTextField.text {
-        hosptialManager.fetchHospital(text: search)
-     }
-     searchTextField.text = ""
-     }
+        if let search = searchTextField.text {
+            hospitalManager.fetchHospital(text: search)
+        }
+        searchTextField.text = ""
+    }
 }
 
 //MARK: - CLLocationManagerDelegate
@@ -103,7 +114,7 @@ extension SearchViewController: UITextFieldDelegate {
 extension SearchViewController: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let location = locations.last {
-           let lat = location.coordinate.latitude
+            let lat = location.coordinate.latitude
             let lon = location.coordinate.longitude
             
             print(lat)

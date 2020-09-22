@@ -9,13 +9,9 @@
 import Foundation
 
 struct HospitalModel: Codable {
-    let id: Int
     let nome: String
     let telefone: String
     let logradouro: String
-    let cep: String
-    let sus: Bool
-    let publico: Bool
     let longitude: Double
     let latitude: Double
 }

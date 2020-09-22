@@ -8,39 +8,58 @@
 
 import Foundation
 
+protocol HospitalManagerDelegate {
+    func didUpdateHospital(_ hospitalManager: HospitalManager, hospital: HospitalModel)
+    func didFailWithErro(error: Error)
+}
+
 struct HospitalManager {
     let hospitalURL = "https://becare-api.azurewebsites.net/api/hospitais/listar-ios/"
     
+    var delegate: HospitalManagerDelegate?
+    
     func fetchHospital(text: String) {
         let urlString = "\(hospitalURL)\(text)"
-        performRequest(urlString: urlString)
+        performRequest(with: urlString)
         print(urlString)
     }
     
-    func performRequest(urlString: String) {
+    func performRequest(with urlString: String) {
         if let url = URL(string: urlString) {
             let session = URLSession(configuration: .default)
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error!)
+                    self.delegate?.didFailWithErro(error: error!)
                     return
                 }
                 if let safeData = data {
-                    self.parseJSON(hospitalData: safeData)
+                    if let hospital = self.parseJSON(safeData){
+                        self.delegate?.didUpdateHospital(self, hospital: hospital)
+                    }
                 }
             }
             task.resume()
         }
     }
     
-    func parseJSON(hospitalData: Data) {
+    func parseJSON(_ hospitalData: Data) -> HospitalModel? {
         let decoder = JSONDecoder()
         do {
        let decodedData = try decoder.decode(HospitalData.self, from: hospitalData)
-            print(decodedData.hospitais[0].nome)
+            let nome = decodedData.hospitais[0].nome
+            let endereco = decodedData.hospitais[0].logradouro
+            let lat = decodedData.hospitais[0].latitude
+            let lon = decodedData.hospitais[0].longitude
+            let tel = decodedData.hospitais[0].telefone
+            
+            let hospital = HospitalModel(nome: nome, telefone: tel, logradouro: endereco, longitude: lon, latitude: lat)
+            
+            //print(decodedData.hospitais[0].nome)
+            
+            return hospital
         } catch {
-            print(error)
-            print("deu ruim")
+            delegate?.didFailWithErro(error: error)
+            return nil
         }
     }
 }
