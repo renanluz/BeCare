@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="TX1-Cq-tvs">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -203,13 +203,65 @@
                     <view key="view" contentMode="scaleToFill" id="k6F-1b-T8d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="mt4-mh-fth">
+                                <rect key="frame" x="20" y="44" width="335" height="734"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="19F-JQ-gvc">
+                                        <rect key="frame" x="0.0" y="0.0" width="335" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ds-SK-7g7">
+                                                <rect key="frame" x="0.0" y="0.0" width="40" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="40" id="ABL-5z-czi"/>
+                                                    <constraint firstAttribute="height" constant="40" id="xTW-ip-Rd8"/>
+                                                </constraints>
+                                                <state key="normal" image="trash" catalog="system"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xc2-xI-LGc">
+                                                <rect key="frame" x="50" y="0.0" width="285" height="40"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="40" id="696-ab-ea8"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="LAB-Dh-IKV"/>
+                                                    <constraint firstAttribute="height" constant="40" id="qvl-qd-ZK4"/>
+                                                </constraints>
+                                                <state key="normal" image="magnifyingglass" catalog="system"/>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="7er-rr-5Im"/>
+                                        </constraints>
+                                    </stackView>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="8dR-Ns-2AW">
+                                        <rect key="frame" x="0.0" y="50" width="335" height="684"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </tableView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="8dR-Ns-2AW" firstAttribute="leading" secondItem="mt4-mh-fth" secondAttribute="leading" id="Ffh-52-amj"/>
+                                    <constraint firstAttribute="bottom" secondItem="8dR-Ns-2AW" secondAttribute="bottom" id="Y5M-PV-rft"/>
+                                    <constraint firstAttribute="trailing" secondItem="19F-JQ-gvc" secondAttribute="trailing" id="aL1-QN-Ui2"/>
+                                    <constraint firstItem="19F-JQ-gvc" firstAttribute="leading" secondItem="mt4-mh-fth" secondAttribute="leading" id="nxo-T5-7nb"/>
+                                    <constraint firstAttribute="trailing" secondItem="8dR-Ns-2AW" secondAttribute="trailing" id="ui9-DS-4j9"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="dTI-uL-v1l" firstAttribute="trailing" secondItem="mt4-mh-fth" secondAttribute="trailing" constant="20" id="OTc-rD-ENW"/>
+                            <constraint firstItem="mt4-mh-fth" firstAttribute="leading" secondItem="dTI-uL-v1l" secondAttribute="leading" constant="20" id="WcE-At-bFU"/>
+                            <constraint firstItem="dTI-uL-v1l" firstAttribute="bottom" secondItem="mt4-mh-fth" secondAttribute="bottom" id="n17-gw-YAl"/>
+                            <constraint firstItem="mt4-mh-fth" firstAttribute="top" secondItem="dTI-uL-v1l" secondAttribute="top" id="u1R-Km-WiA"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="dTI-uL-v1l"/>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="8dR-Ns-2AW" id="MhW-v8-lSj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zjK-uf-hq1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1803" y="138"/>
+            <point key="canvasLocation" x="1802.4000000000001" y="137.4384236453202"/>
         </scene>
     </scenes>
     <resources>
@@ -217,5 +269,6 @@
         <image name="campaign.png" width="180" height="180"/>
         <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <image name="trash" catalog="system" width="121" height="128"/>
     </resources>
 </document>

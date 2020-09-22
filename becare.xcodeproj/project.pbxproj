@@ -28,6 +28,9 @@
 		AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA078382519197D001C28EF /* SearchCell.xib */; };
 		AEA0783C251933DC001C28EF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA0783B251933DC001C28EF /* data.json */; };
 		AEA0783E2519438E001C28EF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783D2519438E001C28EF /* ResultViewController.swift */; };
+		AEA07841251957E2001C28EF /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783F251957E2001C28EF /* ResultCell.swift */; };
+		AEA07842251957E2001C28EF /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA07840251957E2001C28EF /* ResultCell.xib */; };
+		AEA0784425195B27001C28EF /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0784325195B27001C28EF /* Hospital.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +57,9 @@
 		AEA078382519197D001C28EF /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
 		AEA0783B251933DC001C28EF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		AEA0783D2519438E001C28EF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AEA0783F251957E2001C28EF /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		AEA07840251957E2001C28EF /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
+		AEA0784325195B27001C28EF /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,9 +115,10 @@
 				AEA078062518CCD2001C28EF /* Main.storyboard */,
 				AEA078232518DE44001C28EF /* CustomButton.swift */,
 				AEA078252518DF78001C28EF /* CustomCard.swift */,
+				AEA0783F251957E2001C28EF /* ResultCell.swift */,
+				AEA07840251957E2001C28EF /* ResultCell.xib */,
 				AEA078372519197D001C28EF /* SearchCell.swift */,
 				AEA078382519197D001C28EF /* SearchCell.xib */,
-				AEA0783D2519438E001C28EF /* ResultViewController.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -121,6 +128,7 @@
 			children = (
 				AEA078042518CCD2001C28EF /* ViewController.swift */,
 				AEA0782B2518EAF9001C28EF /* SearchViewController.swift */,
+				AEA0783D2519438E001C28EF /* ResultViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 			children = (
 				AEA078192518CE48001C28EF /* HospitalModel.swift */,
 				AEA0782F2518F2F8001C28EF /* Search.swift */,
+				AEA0784325195B27001C28EF /* Hospital.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -208,6 +217,7 @@
 				AEA0783C251933DC001C28EF /* data.json in Resources */,
 				AEA078082518CCD2001C28EF /* Main.storyboard in Resources */,
 				AEA078282518E73D001C28EF /* bg.png in Resources */,
+				AEA07842251957E2001C28EF /* ResultCell.xib in Resources */,
 				AEA0782A2518E941001C28EF /* campaign.png in Resources */,
 				AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */,
 				AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */,
@@ -223,7 +233,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				AEA078302518F2F8001C28EF /* Search.swift in Sources */,
+				AEA0784425195B27001C28EF /* Hospital.swift in Sources */,
 				AEA078392519197E001C28EF /* SearchCell.swift in Sources */,
+				AEA07841251957E2001C28EF /* ResultCell.swift in Sources */,
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
 				AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */,

@@ -39,6 +39,8 @@ class SearchViewController: UIViewController {
         
         searchTextField.delegate = self
         
+        
+        
     }
     
     @IBAction func locationPressed(_ sender: UIButton) {
