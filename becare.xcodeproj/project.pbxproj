@@ -7,39 +7,65 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE4385C2251AB5AC007EB07F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE4385C1251AB5AC007EB07F /* Assets.xcassets */; };
+		AE463FA1251AA00E00421C12 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE463FA0251AA00E00421C12 /* DetailsViewController.swift */; };
+		AE73AF77251A113000FB327F /* HospitalData.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE73AF76251A113000FB327F /* HospitalData.swift */; };
 		AEA078012518CCD2001C28EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078002518CCD2001C28EF /* AppDelegate.swift */; };
 		AEA078032518CCD2001C28EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078022518CCD2001C28EF /* SceneDelegate.swift */; };
 		AEA078052518CCD2001C28EF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078042518CCD2001C28EF /* ViewController.swift */; };
 		AEA078082518CCD2001C28EF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA078062518CCD2001C28EF /* Main.storyboard */; };
 		AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AEA078092518CCD2001C28EF /* becare.xcdatamodeld */; };
-		AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AEA0780C2518CCD7001C28EF /* Assets.xcassets */; };
 		AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */; };
-		AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078192518CE48001C28EF /* Hospital.swift */; };
+		AEA0781A2518CE48001C28EF /* HospitalModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078192518CE48001C28EF /* HospitalModel.swift */; };
 		AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */; };
 		AEA078212518D020001C28EF /* AirbnbCerealLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */; };
 		AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */; };
 		AEA078242518DE44001C28EF /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078232518DE44001C28EF /* CustomButton.swift */; };
 		AEA078262518DF78001C28EF /* CustomCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078252518DF78001C28EF /* CustomCard.swift */; };
 		AEA078282518E73D001C28EF /* bg.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078272518E73D001C28EF /* bg.png */; };
+		AEA0782A2518E941001C28EF /* campaign.png in Resources */ = {isa = PBXBuildFile; fileRef = AEA078292518E941001C28EF /* campaign.png */; };
+		AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0782B2518EAF9001C28EF /* SearchViewController.swift */; };
+		AEA078302518F2F8001C28EF /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0782F2518F2F8001C28EF /* Search.swift */; };
+		AEA078392519197E001C28EF /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA078372519197D001C28EF /* SearchCell.swift */; };
+		AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA078382519197D001C28EF /* SearchCell.xib */; };
+		AEA0783C251933DC001C28EF /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = AEA0783B251933DC001C28EF /* data.json */; };
+		AEA0783E2519438E001C28EF /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783D2519438E001C28EF /* ResultViewController.swift */; };
+		AEA07841251957E2001C28EF /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783F251957E2001C28EF /* ResultCell.swift */; };
+		AEA07842251957E2001C28EF /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA07840251957E2001C28EF /* ResultCell.xib */; };
+		AEA0784425195B27001C28EF /* HospitalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0784325195B27001C28EF /* HospitalManager.swift */; };
+		AEDE8728251ADA3B00B842FB /* data1.json in Resources */ = {isa = PBXBuildFile; fileRef = AEDE8727251ADA3A00B842FB /* data1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE4385C1251AB5AC007EB07F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../../Downloads/AppIcons (1)/Assets.xcassets"; sourceTree = "<group>"; };
+		AE463FA0251AA00E00421C12 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
+		AE73AF76251A113000FB327F /* HospitalData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalData.swift; sourceTree = "<group>"; };
 		AEA077FD2518CCD2001C28EF /* becare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = becare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AEA078002518CCD2001C28EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AEA078022518CCD2001C28EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		AEA078042518CCD2001C28EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		AEA078072518CCD2001C28EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AEA0780A2518CCD2001C28EF /* becare.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = becare.xcdatamodel; sourceTree = "<group>"; };
-		AEA0780C2518CCD7001C28EF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AEA0780F2518CCD7001C28EF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AEA078112518CCD7001C28EF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		AEA078192518CE48001C28EF /* Hospital.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hospital.swift; sourceTree = "<group>"; };
+		AEA078192518CE48001C28EF /* HospitalModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalModel.swift; sourceTree = "<group>"; };
 		AEA0781D2518D020001C28EF /* AirbnbCerealBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealBold.ttf; sourceTree = "<group>"; };
 		AEA0781E2518D020001C28EF /* AirbnbCerealLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealLight.ttf; sourceTree = "<group>"; };
 		AEA0781F2518D020001C28EF /* AirbnbCerealMedium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AirbnbCerealMedium.ttf; sourceTree = "<group>"; };
 		AEA078232518DE44001C28EF /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		AEA078252518DF78001C28EF /* CustomCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCard.swift; sourceTree = "<group>"; };
 		AEA078272518E73D001C28EF /* bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bg.png; sourceTree = "<group>"; };
+		AEA078292518E941001C28EF /* campaign.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = campaign.png; sourceTree = "<group>"; };
+		AEA0782B2518EAF9001C28EF /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		AEA0782F2518F2F8001C28EF /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		AEA078372519197D001C28EF /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		AEA078382519197D001C28EF /* SearchCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchCell.xib; sourceTree = "<group>"; };
+		AEA0783B251933DC001C28EF /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		AEA0783D2519438E001C28EF /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		AEA0783F251957E2001C28EF /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
+		AEA07840251957E2001C28EF /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
+		AEA0784325195B27001C28EF /* HospitalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalManager.swift; sourceTree = "<group>"; };
+		AEDE8727251ADA3A00B842FB /* data1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,9 +101,12 @@
 				AEA078002518CCD2001C28EF /* AppDelegate.swift */,
 				AEA0781B2518CE4D001C28EF /* Model */,
 				AEA078022518CCD2001C28EF /* SceneDelegate.swift */,
-				AEA078182518CDD5001C28EF /* Controllers */,
 				AEA078172518CDC3001C28EF /* Views */,
-				AEA0780C2518CCD7001C28EF /* Assets.xcassets */,
+				AEA078182518CDD5001C28EF /* Controllers */,
+				AE4385C1251AB5AC007EB07F /* Assets.xcassets */,
+				AEA0783B251933DC001C28EF /* data.json */,
+				AEDE8727251ADA3A00B842FB /* data1.json */,
+				AEA078292518E941001C28EF /* campaign.png */,
 				AEA078272518E73D001C28EF /* bg.png */,
 				AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */,
 				AEA078112518CCD7001C28EF /* Info.plist */,
@@ -93,6 +122,10 @@
 				AEA078062518CCD2001C28EF /* Main.storyboard */,
 				AEA078232518DE44001C28EF /* CustomButton.swift */,
 				AEA078252518DF78001C28EF /* CustomCard.swift */,
+				AEA0783F251957E2001C28EF /* ResultCell.swift */,
+				AEA07840251957E2001C28EF /* ResultCell.xib */,
+				AEA078372519197D001C28EF /* SearchCell.swift */,
+				AEA078382519197D001C28EF /* SearchCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -101,6 +134,9 @@
 			isa = PBXGroup;
 			children = (
 				AEA078042518CCD2001C28EF /* ViewController.swift */,
+				AEA0782B2518EAF9001C28EF /* SearchViewController.swift */,
+				AEA0783D2519438E001C28EF /* ResultViewController.swift */,
+				AE463FA0251AA00E00421C12 /* DetailsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -108,7 +144,10 @@
 		AEA0781B2518CE4D001C28EF /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				AEA078192518CE48001C28EF /* Hospital.swift */,
+				AEA0784325195B27001C28EF /* HospitalManager.swift */,
+				AE73AF76251A113000FB327F /* HospitalData.swift */,
+				AEA078192518CE48001C28EF /* HospitalModel.swift */,
+				AEA0782F2518F2F8001C28EF /* Search.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -183,10 +222,15 @@
 			files = (
 				AEA078212518D020001C28EF /* AirbnbCerealLight.ttf in Resources */,
 				AEA078102518CCD7001C28EF /* LaunchScreen.storyboard in Resources */,
-				AEA0780D2518CCD7001C28EF /* Assets.xcassets in Resources */,
+				AEA0783C251933DC001C28EF /* data.json in Resources */,
 				AEA078082518CCD2001C28EF /* Main.storyboard in Resources */,
 				AEA078282518E73D001C28EF /* bg.png in Resources */,
+				AEA07842251957E2001C28EF /* ResultCell.xib in Resources */,
+				AEA0782A2518E941001C28EF /* campaign.png in Resources */,
+				AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */,
 				AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */,
+				AEDE8728251ADA3B00B842FB /* data1.json in Resources */,
+				AE4385C2251AB5AC007EB07F /* Assets.xcassets in Resources */,
 				AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -198,13 +242,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEA078302518F2F8001C28EF /* Search.swift in Sources */,
+				AEA0784425195B27001C28EF /* HospitalManager.swift in Sources */,
+				AEA078392519197E001C28EF /* SearchCell.swift in Sources */,
+				AEA07841251957E2001C28EF /* ResultCell.swift in Sources */,
 				AEA078052518CCD2001C28EF /* ViewController.swift in Sources */,
+				AE73AF77251A113000FB327F /* HospitalData.swift in Sources */,
 				AEA0780B2518CCD2001C28EF /* becare.xcdatamodeld in Sources */,
+				AEA0782C2518EAF9001C28EF /* SearchViewController.swift in Sources */,
 				AEA078242518DE44001C28EF /* CustomButton.swift in Sources */,
 				AEA078012518CCD2001C28EF /* AppDelegate.swift in Sources */,
-				AEA0781A2518CE48001C28EF /* Hospital.swift in Sources */,
+				AEA0781A2518CE48001C28EF /* HospitalModel.swift in Sources */,
 				AEA078032518CCD2001C28EF /* SceneDelegate.swift in Sources */,
 				AEA078262518DF78001C28EF /* CustomCard.swift in Sources */,
+				AEA0783E2519438E001C28EF /* ResultViewController.swift in Sources */,
+				AE463FA1251AA00E00421C12 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

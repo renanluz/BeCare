@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     
     
     @IBAction func searchButtonPressed(_ sender: CustomButton) {
+        self.performSegue(withIdentifier: "goToSearch", sender: self)
     }
     
     override func viewDidLoad() {

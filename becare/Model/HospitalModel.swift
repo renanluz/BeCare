@@ -8,14 +8,12 @@
 
 import Foundation
 
-struct Hospital: Codable {
-    let id: Int
+struct HospitalModel: Codable {
     let nome: String
     let telefone: String
     let logradouro: String
-    let cep: String
-    let sus: Bool
-    let publico: Bool
     let longitude: Double
     let latitude: Double
+    let fila: String
+    
 }

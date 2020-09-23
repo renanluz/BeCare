@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="AirbnbCerealBold.ttf">
+            <string>AirbnbCerealApp-Bold</string>
+        </array>
+        <array key="AirbnbCerealLight.ttf">
+            <string>AirbnbCerealApp-Light</string>
+        </array>
+        <array key="AirbnbCerealMedium.ttf">
+            <string>AirbnbCerealApp-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="Cell" rowHeight="241" id="KGk-i7-Jjw" customClass="ResultCell" customModule="becare" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="622" height="241"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="622" height="241"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xIQ-L6-ZFN">
+                        <rect key="frame" x="10" y="30" width="602" height="121.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lqZ-3f-Fv9">
+                                <rect key="frame" x="0.0" y="0.0" width="510" height="121.5"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="7yz-qi-YdX">
+                                        <rect key="frame" x="10" y="10" width="490" height="101.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Csm-nd-Ayp">
+                                                <rect key="frame" x="0.0" y="0.0" width="43.5" height="67.5"/>
+                                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="koy-9d-ldc">
+                                                <rect key="frame" x="0.0" y="67.5" width="32" height="17"/>
+                                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Light" family="Airbnb Cereal App" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="l1K-R4-ogN">
+                                                <rect key="frame" x="0.0" y="84.5" width="33.5" height="17"/>
+                                                <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="7yz-qi-YdX" firstAttribute="top" secondItem="lqZ-3f-Fv9" secondAttribute="top" constant="10" id="MaA-kE-elP"/>
+                                    <constraint firstItem="7yz-qi-YdX" firstAttribute="leading" secondItem="lqZ-3f-Fv9" secondAttribute="leading" constant="10" id="a4L-yG-iaW"/>
+                                    <constraint firstAttribute="trailing" secondItem="7yz-qi-YdX" secondAttribute="trailing" constant="10" id="dGq-oL-C11"/>
+                                    <constraint firstAttribute="bottom" secondItem="7yz-qi-YdX" secondAttribute="bottom" constant="10" id="nlE-V9-0uV"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rn-1G-xSv">
+                                <rect key="frame" x="520" y="0.0" width="82" height="121.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-E8-7ga">
+                                        <rect key="frame" x="5" y="51" width="72" height="20"/>
+                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="15"/>
+                                        <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hr/min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-Hc-sKa">
+                                        <rect key="frame" x="21" y="81" width="40.5" height="17"/>
+                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="13"/>
+                                        <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vnt-E8-7ga" secondAttribute="trailing" constant="5" id="EPL-fe-aQU"/>
+                                    <constraint firstItem="Vnt-E8-7ga" firstAttribute="centerY" secondItem="8rn-1G-xSv" secondAttribute="centerY" id="Hlx-Vr-Tmf"/>
+                                    <constraint firstItem="Bb6-Hc-sKa" firstAttribute="centerX" secondItem="8rn-1G-xSv" secondAttribute="centerX" id="WGS-g2-R5n"/>
+                                    <constraint firstItem="Bb6-Hc-sKa" firstAttribute="top" secondItem="Vnt-E8-7ga" secondAttribute="bottom" constant="10" id="cwW-0J-t2n"/>
+                                    <constraint firstItem="Vnt-E8-7ga" firstAttribute="leading" secondItem="8rn-1G-xSv" secondAttribute="leading" constant="5" id="eHs-0r-a4V"/>
+                                    <constraint firstAttribute="height" constant="115" id="uLE-VT-2Og"/>
+                                    <constraint firstAttribute="width" constant="82" id="xVK-rL-9sc"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="xIQ-L6-ZFN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="30" id="Eah-kd-IVu"/>
+                    <constraint firstAttribute="trailing" secondItem="xIQ-L6-ZFN" secondAttribute="trailing" constant="10" id="nop-9a-akR"/>
+                    <constraint firstAttribute="bottom" secondItem="xIQ-L6-ZFN" secondAttribute="bottom" id="rfr-FR-MI2"/>
+                    <constraint firstItem="xIQ-L6-ZFN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="xu8-uV-drk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="koy-9d-ldc" id="6WK-yF-QVJ"/>
+                <outlet property="distanceLabel" destination="l1K-R4-ogN" id="DVI-Of-hqi"/>
+                <outlet property="hospitalBubble" destination="lqZ-3f-Fv9" id="KBc-YM-V66"/>
+                <outlet property="nameLabel" destination="Csm-nd-Ayp" id="ajL-Lp-6Gg"/>
+                <outlet property="timeBubble" destination="8rn-1G-xSv" id="fkn-Qi-gw2"/>
+                <outlet property="timeLabel" destination="Vnt-E8-7ga" id="HQl-d4-3bw"/>
+                <outlet property="unityLabel" destination="Bb6-Hc-sKa" id="adt-q3-FDU"/>
+            </connections>
+            <point key="canvasLocation" x="95.652173913043484" y="219.97767857142856"/>
+        </tableViewCell>
+    </objects>
+</document>
