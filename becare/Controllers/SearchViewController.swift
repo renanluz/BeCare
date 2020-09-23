@@ -16,7 +16,7 @@ class SearchViewController: UIViewController, HospitalManagerDelegate {
         Search(text: "Hospital 2"),
         Search(text: "Hospital 3")
     ]
-    
+
     
     
     @IBOutlet weak var tableView: UITableView!
@@ -48,11 +48,17 @@ class SearchViewController: UIViewController, HospitalManagerDelegate {
     
     
     func didUpdateHospital(_ hospitalManager: HospitalManager, hospital: HospitalModel) {
-       print(hospital)
+        DispatchQueue.main.async {
+            print(hospital)
+        }
     }
     
     func didFailWithErro(error: Error) {
         print(error)
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true, completion: nil)
     }
     
     
@@ -62,12 +68,13 @@ class SearchViewController: UIViewController, HospitalManagerDelegate {
 
 extension SearchViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "ReusableCell", for: indexPath) as! SearchCell
         cell.label.text = searchs[(indexPath.row)].text
+
        
         return cell
     }
@@ -88,7 +95,7 @@ extension SearchViewController: UITextFieldDelegate {
     
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         searchTextField.endEditing(true)
-        //self.performSegue(withIdentifier: "goToResult", sender: self)
+        self.performSegue(withIdentifier: "goToResult", sender: self)
         return true
     }
     

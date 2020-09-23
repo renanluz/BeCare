@@ -20,6 +20,16 @@ class ResultViewController: UIViewController {
  
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let detailsVC = segue.destination as? DetailsViewController {
+            
+            let hospital = hospitals[tableView.indexPathForSelectedRow!.row]
+            
+            detailsVC.hospital = hospital
+        }
+    }
+    
+    
     @IBOutlet weak var tableView: UITableView!
     
     var hospitals: [HospitalModel] = []
@@ -45,9 +55,10 @@ class ResultViewController: UIViewController {
         } catch  {
             print(error.localizedDescription)
         }
-        
     }
+    
 }
+
 
 
 extension ResultViewController: UITableViewDataSource {
@@ -66,7 +77,7 @@ extension ResultViewController: UITableViewDataSource {
 }
 
 extension ResultViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       // print(hospitals[indexPath.row].address)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {        
+        self.performSegue(withIdentifier: "goToDetails", sender: self)
     }
 }

@@ -29,8 +29,9 @@ class ResultCell: UITableViewCell {
         
         self.timeBubble.clipsToBounds = true
         timeBubble.layer.cornerRadius = 10
+    
         timeBubble.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMaxXMinYCorner]
-        layer.cornerRadius = 10
+        layer.cornerRadius = 5
         layer.shadowColor = UIColor.black.cgColor
         layer.shadowRadius = 10
         layer.shadowOpacity = 0.3

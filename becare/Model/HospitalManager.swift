@@ -18,10 +18,14 @@ struct HospitalManager {
     
     var delegate: HospitalManagerDelegate?
     
+    var hospitals = [HospitalModel]()
+    
+    
     func fetchHospital(text: String) {
         let urlString = "\(hospitalURL)\(text)"
         performRequest(with: urlString)
         print(urlString)
+        
     }
     
     func performRequest(with urlString: String) {
@@ -54,7 +58,7 @@ struct HospitalManager {
             
             let hospital = HospitalModel(nome: nome, telefone: tel, logradouro: endereco, longitude: lon, latitude: lat)
             
-            //print(decodedData.hospitais[0].nome)
+             //print(decodedData.hospitais[0].nome)
             
             return hospital
         } catch {
