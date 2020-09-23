@@ -68,16 +68,14 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8rn-1G-xSv">
                                 <rect key="frame" x="520" y="0.0" width="82" height="121.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-E8-7ga">
-                                        <rect key="frame" x="13" y="47" width="55" height="28"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vnt-E8-7ga">
+                                        <rect key="frame" x="5" y="51" width="72" height="20"/>
+                                        <fontDescription key="fontDescription" name="AirbnbCerealApp-Bold" family="Airbnb Cereal App" pointSize="15"/>
                                         <color key="textColor" cocoaTouchSystemColor="lightTextColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-Hc-sKa">
-                                        <rect key="frame" x="20" y="81" width="34" height="17"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hr/min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bb6-Hc-sKa">
+                                        <rect key="frame" x="21" y="81" width="40.5" height="17"/>
                                         <fontDescription key="fontDescription" name="AirbnbCerealApp-Medium" family="Airbnb Cereal App" pointSize="13"/>
                                         <color key="textColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
                                         <nil key="highlightedColor"/>
@@ -85,6 +83,11 @@
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Vnt-E8-7ga" secondAttribute="trailing" constant="5" id="EPL-fe-aQU"/>
+                                    <constraint firstItem="Vnt-E8-7ga" firstAttribute="centerY" secondItem="8rn-1G-xSv" secondAttribute="centerY" id="Hlx-Vr-Tmf"/>
+                                    <constraint firstItem="Bb6-Hc-sKa" firstAttribute="centerX" secondItem="8rn-1G-xSv" secondAttribute="centerX" id="WGS-g2-R5n"/>
+                                    <constraint firstItem="Bb6-Hc-sKa" firstAttribute="top" secondItem="Vnt-E8-7ga" secondAttribute="bottom" constant="10" id="cwW-0J-t2n"/>
+                                    <constraint firstItem="Vnt-E8-7ga" firstAttribute="leading" secondItem="8rn-1G-xSv" secondAttribute="leading" constant="5" id="eHs-0r-a4V"/>
                                     <constraint firstAttribute="height" constant="115" id="uLE-VT-2Og"/>
                                     <constraint firstAttribute="width" constant="82" id="xVK-rL-9sc"/>
                                 </constraints>

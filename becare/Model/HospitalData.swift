@@ -22,5 +22,6 @@ struct Hospital: Codable {
     let publico: Bool
     let longitude: Double
     let latitude: Double
+    let fila: String
 }
 

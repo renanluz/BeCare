@@ -62,6 +62,7 @@ class SearchViewController: UIViewController, HospitalManagerDelegate {
     }
     
     
+    
 }
 
 //MARK: - UITableViewDataSource

@@ -133,6 +133,7 @@
                                     <constraint firstAttribute="height" constant="40" id="NDI-g3-T4b"/>
                                     <constraint firstAttribute="width" constant="40" id="aUS-2e-dT1"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" image="location.circle" catalog="system"/>
                                 <connections>
@@ -508,13 +509,14 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="khZ-o9-CPd"/>
         <segue reference="Pa5-HA-7i5"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="backImage" width="18" height="14"/>
         <image name="bg.png" width="375" height="812"/>
         <image name="campaign.png" width="180" height="180"/>
-        <image name="ilustration" width="208" height="173"/>
+        <image name="ilustration" width="208.66667175292969" height="173.66667175292969"/>
         <image name="location.circle" catalog="system" width="128" height="121"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="phoneIcon" width="29" height="29"/>

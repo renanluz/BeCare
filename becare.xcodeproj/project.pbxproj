@@ -33,6 +33,7 @@
 		AEA07841251957E2001C28EF /* ResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0783F251957E2001C28EF /* ResultCell.swift */; };
 		AEA07842251957E2001C28EF /* ResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEA07840251957E2001C28EF /* ResultCell.xib */; };
 		AEA0784425195B27001C28EF /* HospitalManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEA0784325195B27001C28EF /* HospitalManager.swift */; };
+		AEDE8728251ADA3B00B842FB /* data1.json in Resources */ = {isa = PBXBuildFile; fileRef = AEDE8727251ADA3A00B842FB /* data1.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +65,7 @@
 		AEA0783F251957E2001C28EF /* ResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultCell.swift; sourceTree = "<group>"; };
 		AEA07840251957E2001C28EF /* ResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultCell.xib; sourceTree = "<group>"; };
 		AEA0784325195B27001C28EF /* HospitalManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HospitalManager.swift; sourceTree = "<group>"; };
+		AEDE8727251ADA3A00B842FB /* data1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data1.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				AEA078182518CDD5001C28EF /* Controllers */,
 				AE4385C1251AB5AC007EB07F /* Assets.xcassets */,
 				AEA0783B251933DC001C28EF /* data.json */,
+				AEDE8727251ADA3A00B842FB /* data1.json */,
 				AEA078292518E941001C28EF /* campaign.png */,
 				AEA078272518E73D001C28EF /* bg.png */,
 				AEA0780E2518CCD7001C28EF /* LaunchScreen.storyboard */,
@@ -226,6 +229,7 @@
 				AEA0782A2518E941001C28EF /* campaign.png in Resources */,
 				AEA0783A2519197E001C28EF /* SearchCell.xib in Resources */,
 				AEA078202518D020001C28EF /* AirbnbCerealBold.ttf in Resources */,
+				AEDE8728251ADA3B00B842FB /* data1.json in Resources */,
 				AE4385C2251AB5AC007EB07F /* Assets.xcassets in Resources */,
 				AEA078222518D020001C28EF /* AirbnbCerealMedium.ttf in Resources */,
 			);

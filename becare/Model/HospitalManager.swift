@@ -55,8 +55,10 @@ struct HospitalManager {
             let lat = decodedData.hospitais[0].latitude
             let lon = decodedData.hospitais[0].longitude
             let tel = decodedData.hospitais[0].telefone
+            let fila = decodedData.hospitais[0].fila
             
-            let hospital = HospitalModel(nome: nome, telefone: tel, logradouro: endereco, longitude: lon, latitude: lat)
+            
+            let hospital = HospitalModel(nome: nome, telefone: tel, logradouro: endereco, longitude: lon, latitude: lat, fila: fila)
             
              //print(decodedData.hospitais[0].nome)
             

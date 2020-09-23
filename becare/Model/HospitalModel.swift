@@ -14,4 +14,6 @@ struct HospitalModel: Codable {
     let logradouro: String
     let longitude: Double
     let latitude: Double
+    let fila: String
+    
 }

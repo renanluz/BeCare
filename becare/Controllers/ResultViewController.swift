@@ -15,6 +15,7 @@ class ResultViewController: UIViewController {
     var logradouro: String?
     var longitude: Double?
     var latitude: Double?
+    var tempo: String?
     
     @IBAction func searchButtonPressed(_ sender: UIButton) {
  
@@ -46,7 +47,7 @@ class ResultViewController: UIViewController {
     }
     
     func loadHospital() {
-        guard let fileURL = Bundle.main.url(forResource: "data", withExtension: "json") else { return }
+        guard let fileURL = Bundle.main.url(forResource: "data1", withExtension: "json") else { return }
         do {
         
             let data = try Data(contentsOf: fileURL)
@@ -71,6 +72,7 @@ extension ResultViewController: UITableViewDataSource {
         
         cell.nameLabel.text = hospitals[indexPath.row].nome
         cell.addressLabel.text = hospitals[indexPath.row].logradouro
+        cell.timeLabel.text = hospitals[indexPath.row].fila
         
         return cell
     }
